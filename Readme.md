@@ -11,7 +11,7 @@ Installation
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/your-username/toystore-backend.git
+git clone https://github.com/anelz/Toystore_Backend.git
 cd Toystore_Backend
 Install the necessary dependencies:
 bash
