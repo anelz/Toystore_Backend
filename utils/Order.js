@@ -1,10 +1,11 @@
 const mongoose = require("mongoose");
 const Order = require("../models/Ordermodel");
+const User = require("../models/Usermodel");
 
 const validateOrder = async () => {
   try {
     const existingUser = await Order.findById({
-      username: user.username,
+      userId: order.userId,
     });
     return existingUser;
   } catch (e) {

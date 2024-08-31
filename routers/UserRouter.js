@@ -8,7 +8,6 @@ const router = express.Router();
 router.post("/register", async ({ body }, res) => {
   try {
     const { name, surname, username, password, role } = body || {};
-    if (role !== "User") return res.status(400).send("Type incorrect");
     const newUser = await User.create({
       name,
       surname,

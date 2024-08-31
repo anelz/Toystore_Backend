@@ -8,7 +8,6 @@ const router = express.Router();
 router.post("/register", async ({ body }, res) => {
   try {
     const { name, surname, username, password, role } = body || {};
-    if (role !== "admin") return res.status(400).send("Role incorrect");
     const newAdmin = await Admin.create({
       name,
       surname,

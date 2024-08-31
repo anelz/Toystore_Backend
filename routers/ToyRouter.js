@@ -16,8 +16,12 @@ router.post("/", async ({ body }, res) => {
 });
 
 router.get("/", async (req, res) => {
-  const toys = await Toy.find();
-  res.send(toys);
+  try {
+    const toys = await Toy.find();
+    res.send(toys);
+  } catch (e) {
+    res.status(400).send("toy fatching failed...");
+  }
 });
 
 router.get("/:toyId", async ({ params }, res) => {
