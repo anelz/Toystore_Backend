@@ -56,7 +56,6 @@ dotenv: Loads environment variables from a .env file into process.env.
 Cors: Middleware to enable Cross-Origin Resource Sharing (CORS).
 Nodemon: A utility that automatically restarts the server when file changes are detected.
 License
-This project is licensed under the ISC License.
 
 
-sub, 31. kol 2024. u 21:12 Anel Zeric <anel_z86@hotmail.com> napisao je:
+
